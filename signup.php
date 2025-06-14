@@ -30,7 +30,7 @@
     </div>
 
 
-      <form action="profile.php" class="signupForm" method="post"> 
+      <form action="profile.php" class="signupForm" method="post" enctype="multipart/form-data"> 
         <input
           type="text"
           name="firstname"
@@ -59,10 +59,15 @@
          placeholder="Password"
           required
         />
+        <input type="file" name="pfp" id="pfp" />
+
         <input type="submit" value="Sign Up" id="submit" />
 
       </form>
    
       
+         <footer>
+  <p>&copy; 2025 Wallsy Posters. All rights reserved.</p>
+</footer>
   </body>
 </html>

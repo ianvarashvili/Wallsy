@@ -27,10 +27,18 @@ body {
   background: linear-gradient(to right, #ffffff, #400472);
 }
 .bodyfavs {
-  background: linear-gradient(to right, #ffffff, #464705);
+  background: linear-gradient(to right, #ffffff, #5e385a);
 }
 .bodycart {
   background: linear-gradient(to right, #ffffff, #464705);
+}
+footer {
+  text-align: center;
+  font-size:20px;
+  color: #333; 
+  padding: 10px;
+  background-color: #0000006e;
+  
 }
 
 header {
@@ -383,7 +391,7 @@ header .nav .icon img:hover {
   font-family: manga;
   font-size: 40px;
   color: #ffffff;
- text-shadow: #000000 2px 2px 4px;
+  text-shadow: #000000 2px 2px 4px;
   margin-top: 30px;
   margin-bottom: 20px;
 }
@@ -394,19 +402,53 @@ header .nav .icon img:hover {
   margin: 15px 0;
   padding-left: 10px;
   border-left: 4px solid #c42173;
-
 }
 
 .profile p:hover {
   background-color: #f0f8ff;
   border-left-color: #414e06;
- 
 }
-.cart{
+.profile img {
+  border: 6px solid #530038;
+  box-shadow: 8px #0000001a;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.cart {
   height: 80vh;
   color: #00000057;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: fadeIn 1s;
+}
+
+@media screen and (max-width: 800px) {
+  header .nav {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 20px;
+  }
+  header .nav a {
+    font-size: 20px;
+  }
+  .featured .banner {
+    width: 100%;
+    height: auto;
+  }
+  .featured h2 {
+    font-size: 30px;
+  }
+  .featured h3 {
+    font-size: 18px;
+  }
+  .welcome {
+    font-size: 18px;
+  }
+  
 }

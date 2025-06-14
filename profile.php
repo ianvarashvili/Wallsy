@@ -25,12 +25,29 @@
     </header>
 
  <main>
+
+ 
   <h2 class="profTitle">Your Account</h2>
   <div class="profile">
+
+<?php
+$targetDir = "uploads/";
+$filename = basename($_FILES["pfp"]["name"]);
+$targetFile = $targetDir . $filename;
+$imageUploaded = false;
+
+if (move_uploaded_file($_FILES["pfp"]["tmp_name"], $targetFile)) {
+    $imageUploaded = true;
+}
+?>
+
+    <img src="<?php echo $targetFile; ?>" alt="Profile Picture" >
+
 
         <p> <strong>First Name:</strong> <?php echo $_POST["firstname"] ?></p>
         <p><strong>Last Name:</strong> <?php echo $_POST["lastname"] ?></p>
         <p><strong>Email:</strong> <?php echo $_POST["email"] ?> </p>
+        
 
 </div>
         <?php
@@ -44,6 +61,9 @@
         ?>
      </main>
 
+   <footer>
+  <p>&copy; 2025 Wallsy Posters. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
