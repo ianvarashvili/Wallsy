@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="img/logo2.png" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Wallsy Sign Up</title>
+  </head>
+  <body class="bodysignup">
+    <header>
+      <div class="nav">
+        <a href="profile.php" class="nav-link">Home</a>
+        <a href="posters.html" class="nav-link">Posters</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="signup.html" class="nav-link">Sign Up</a>
+        <a class="icon" href="profile.php"><img src="img/user.png" alt="" /></a>
+        <a class="icon" href="cart.html"
+          ><img src="img/cart_off.png" alt=""
+        /></a>
+      </div>
+    </header>
+    <div class="titlee">
+      <h1>Sign Up on Wallsy and Join Us</h1>
+    </div>
+
+    <form
+      action="profile.php"
+      class="signupForm"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input
+        type="text"
+        name="firstname"
+        id="firstname"
+        placeholder="First Name"
+        required
+      />
+
+      <input
+        type="text"
+        name="lastname"
+        id="lastname"
+        placeholder="Last Name"
+      />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="E-mail"
+        required
+      />
+
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+        required
+      />
+      <p>Upload Profile Picture</p>
+      <input type="file" name="pfp" id="pfp" />
+
+      <input type="submit" value="Sign Up" id="submit" />
+    </form>
+
+    <footer>
+      <p>&copy; 2025 Wallsy Posters. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

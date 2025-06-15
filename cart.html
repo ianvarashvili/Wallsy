@@ -14,7 +14,7 @@
         <a href="index.html"  class="nav-link">Home</a>
         <a href="posters.html"  class="nav-link">Posters</a>
         <a href="about.html"  class="nav-link">About</a>
-        <a href="signup.php"  class="nav-link">Sign Up</a>
+        <a href="signup.html"  class="nav-link">Sign Up</a>
         <a class="icon" href="profile.php"  
           ><img src="img/user.png" alt=""
         /></a>

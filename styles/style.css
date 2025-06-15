@@ -273,7 +273,19 @@ header .nav .icon img:hover {
   transition: 0.3s;
   font-family: manga;
 }
-
+#pfp{
+  width: 8%;
+  border-radius: 15px;
+  border: 3px solid hsl(325, 83%, 19%);
+  font-size: 16px;
+}
+.signupForm p{
+  font-family: typewriter;
+  font-size: 15px;
+  color: #ffffff;
+  text-shadow: #000000 2px 2px 4px ;
+  margin: 5px;
+}
 .info {
   display: flex;
   flex-direction: column;
@@ -401,16 +413,15 @@ header .nav .icon img:hover {
   color: #000000;
   margin: 15px 0;
   padding-left: 10px;
-  border-left: 4px solid #c42173;
+ 
 }
 
 .profile p:hover {
   background-color: #f0f8ff;
-  border-left-color: #414e06;
+  border-left-color: #4e0636;
 }
 .profile img {
   border: 6px solid #530038;
-  box-shadow: 8px #0000001a;
   width: 150px;
   height: 150px;
   object-fit: cover;
